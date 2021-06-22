@@ -1,0 +1,39 @@
+//faça um programa java que leia 10 numeros informados pelo usuario e ao final da leitura
+// escrever a soma total dos 10 numeros lidos
+
+import java.util.*;
+public class exer6java {
+    public static void main (String [] args) {
+        Scanner sc = new Scanner (System.in);
+
+        
+
+        System.out.println("Digite o 1 numero");
+        int numero1 = sc.nextInt();
+        System.out.println("Digite o 2 numero");
+        int numero2 = sc.nextInt();
+        System.out.println("Digite o 3 numero");
+        int numero3 = sc.nextInt();
+        System.out.println("Digite o 4 numero");
+        int numero4 = sc.nextInt();
+        System.out.println("Digite o 5 numero");
+        int numero5 = sc.nextInt();
+        System.out.println("Digite o 6 numero");
+        int numero6 = sc.nextInt();
+        System.out.println("Digite o 7 numero");
+        int numero7 = sc.nextInt();
+        System.out.println("Digite o 8 numero");
+        int numero8 = sc.nextInt();
+        System.out.println("Digite o 9 numero");
+        int numero9 = sc.nextInt();
+        System.out.println("Digite o 10 numero");
+        int numero10 = sc.nextInt();
+
+        int numero = numero1 + numero2 + numero3 + numero4 + numero5 + numero6 + numero7 + numero8 + numero9 + numero10 ;
+
+        System.out.print ("a soma dos 10 dos numero é: " +numero);
+
+    }
+
+    
+}
