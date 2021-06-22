@@ -1,0 +1,26 @@
+//escreva um progrma em java que exiba verdadeiro ou falso e se os dois numeros
+//inseridos pelo usuario são positivos ou negativos.
+
+
+import java.util.*;
+public class exer5java {
+    public static void main (String [] args) {
+        Scanner texto = new Scanner (System.in);
+
+        int numero1, numero2; 
+
+        System.out.println("Digite o primeiro numero");
+        numero1 = texto.nextInt();
+        System.out.println("Digite o segundo numero");
+        numero2 = texto.nextInt();
+
+        if (numero1 > 0 && numero2 > 0 ){
+            System.out.print(" Os dois numeros informados sao maiores que 0 (positvo)");
+        }
+        if (numero1 < 0 && numero2 < 0 ){
+            System.out.print(" Os dois numeros informados sao menores que 0 (negativo)");
+
+        }
+    }
+}
+
