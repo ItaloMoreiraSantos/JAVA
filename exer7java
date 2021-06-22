@@ -1,0 +1,29 @@
+//faça um programa que leia 10 numeros que o usuario vai informar.
+//todos os numeros lidos com o valor inferior a 40 devem ser somados.
+//escreva o valor final da soma informado
+
+
+import java.util.*;
+public class exer7java {
+    public static void main (String [] args) {
+        Scanner sc = new Scanner(System.in);
+
+      int r, x=0, n=0;
+      
+
+      while (n < 10){
+          System.out.print ("Digite um numero:");
+           r = sc.nextInt();
+
+           if (r < 40 ){
+               x = r+x;
+
+           }
+           n++;
+        }
+        
+             System.out.print("O valor fina é:" + x); 
+
+      }
+      
+}
