@@ -3,7 +3,7 @@ public class Programa {
         
         Onibusturistico Onibus1 = new Onibusturistico("Sao Paulo", "vamos que vamos", 30, 25, 25, 3, 10, "Bahia", "Saí do ônibus agora");
 
-        System.out.println("Vamos " + Onibus1.returnlocal_atual() + ", para a Bahia " + Onibus1.returnLigar() + ", saiam do ônibus" + Onibus1.returncapacidade_onibus());
+        System.out.println("Vamos " + Onibus1.returnlocal_atual() + ", para a Bahia " + Onibus1.returnLigar() + ", saiam " + Onibus1.returncapacidade_onibus());
 
         Onibus1.quantidade_paradas();
         Onibus1.pessoas_presentes();
