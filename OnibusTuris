@@ -1,0 +1,96 @@
+public class Programa {
+    public static void main(String[] args) {        
+        
+        Onibusturistico Onibus1 = new Onibusturistico("Sao Paulo", "vamos que vamos", 30, 25, 25, 3, 10, "Bahia", "Saí do ônibus agora");
+
+        System.out.println("Vamos " + Onibus1.returnlocal_atual() + ", para a Bahia " + Onibus1.returnLigar() + ", saiam do ônibus" + Onibus1.returncapacidade_onibus());
+
+        Onibus1.quantidade_paradas();
+        Onibus1.pessoas_presentes();
+        Onibus1.saida_pessoas();
+
+    }
+    
+    class Onibusturistico {
+    String ligar;
+    String desligar;
+    String freiar;
+    String acelerar;
+    String local_atual;
+    String local_final;
+    int quantidade_paradas;
+    Int entrada_pessoas;
+    Int saida_pessoas;
+    int pessoas_presentes;
+    int capacidade_onibus;
+
+    
+
+
+
+
+     //Método construtor
+      public Onibusturistico(String local_atual, String ligar, int capacidade_onibus, Int entrada_pessoas, Int pessoas_presentes, String quantidade_paradas, int saida_pessoas, String local_final, String desligar ) {
+        this.local_atual = local_atual;
+        this.ligar = ligar;
+        this.capacidade_onibus = capacidade_onibus;
+        this.entrada.pessoas = entrada_pessoas;
+        this.pessoas_presentes = pessoas_presentes;
+        this.quantidade_paradas = quantidade_paradas;
+        this.saida_pessoas = saida_pessoas;  
+        this.local_final = local_final;
+        this.desligar = desligar;
+
+    }
+    public String returnlocal_atual()  {
+        return local_atual;
+    }
+
+    public String returnLigar()  {
+        return this.Ligar;
+    }
+
+    public String returncapacidade_onibus()  {
+        return capacidade_onibus;
+    }
+
+    public int returnentrada_pessoas() {
+        return this.entrada_pessoas;
+    }
+
+    public int returnpessoas_presentes() {
+        return this.pessoas_presentes;
+    }
+    public int returnquantidade_paradas() {
+        return this.quantidade_paradas;
+    }
+
+
+   public int returnsaida_pessoas() {
+        return this.saida_pessoas;
+    }
+
+    public int returnlocal_final() {
+            return this.local_final;
+    }
+
+    public int returndesligar() {
+            return this.desligar;
+
+    }    
+
+    public void definirquantidade_paradase(int quantidade_paradas) {
+        this.quantidade_paradas = quantidade_paradas;
+    }
+
+    public void definirentrada_pessoas(int pessoas_presentes) {
+        this.pessoas_presentes =  this.pessoas_presentes - saida_pessoas ;
+    }    
+
+
+    void Ligar() {
+        System.out.println("Pode subir");
+    }
+}
+
+}
